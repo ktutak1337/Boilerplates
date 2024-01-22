@@ -50,6 +50,9 @@ qm set $VM_ID --ide2 $STORAGE_POOL:cloudinit
 echo "> Configuring boot options for the virtual machine $VM_ID in Proxmox VE. Setting the boot sequence to 'c' and specifying 'scsi0' as the boot disk."
 qm set $VM_ID --boot c --bootdisk scsi0
 
+echo "> Configuring virtual machine with ID $VM_ID to start automatically on system boot."
+qm set $VM_ID --onboot 1
+
 echo "> Configuring serial console settings for the virtual machine $VM_ID in Proxmox VE. Setting serial0 as a socket for serial communication and using serial0 as the VGA output."
 qm set $VM_ID --serial0 socket --vga serial0
 
