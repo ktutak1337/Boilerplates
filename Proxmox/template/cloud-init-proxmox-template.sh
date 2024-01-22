@@ -11,7 +11,7 @@ STORAGE_POOL="local-lvm"
 IMAGE_FORMAT="qcow2"
 
 # VM config
-VM_ID=9000
+VM_ID=8000
 MEMORY=2048
 CORES=1
 VM_NAME="ubuntu-cloud"
