@@ -11,7 +11,7 @@ STORAGE_POOL="local-lvm"
 IMAGE_FORMAT="qcow2"
 
 # VM config
-VM_ID=8000
+VM_ID=9000
 MEMORY=2048
 CORES=1
 VM_NAME="ubuntu-cloud"
@@ -52,6 +52,8 @@ qm set $VM_ID --boot c --bootdisk scsi0
 
 echo "> Configuring serial console settings for the virtual machine $VM_ID in Proxmox VE. Setting serial0 as a socket for serial communication and using serial0 as the VGA output."
 qm set $VM_ID --serial0 socket --vga serial0
+
+qm set $VM_ID --ipconfig0 ip=dhcp
 
 echo "> Creating a template from the virtual machine with ID $VM_ID in Proxmox VE."
 qm template $VM_ID
