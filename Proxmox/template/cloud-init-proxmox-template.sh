@@ -24,9 +24,9 @@ fi
 
 touch "$LOCKFILE"
 
-#mkdir cloud-images
+mkdir -p cloud-images
 
-#cd cloud-images/
+cd cloud-images/
 
 echo "> Downloading a cloud image ('$IMAGE_NAME')"
 wget "$URL"
