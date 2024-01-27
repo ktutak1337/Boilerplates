@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOCKFILE="/tmp/moj_skrypt.lock"
+LOCKFILE="/tmp/cloud-init-proxmox-template.lock"
 EXIT_CODE=0
 
 # Cloud image config
