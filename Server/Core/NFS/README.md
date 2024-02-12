@@ -30,7 +30,7 @@ Where:
 To download and run the script using wget, use the following command:
 
 ```bash
-wget -O - https://raw.githubusercontent.com/ktutak1337/Boilerplates/master/Server/Core/docker_nfs_mount.sh | sudo bash -s -- <NFS_SERVER_IP> <NFS_PATH> <MOUNT_POINT>
+wget -O - https://raw.githubusercontent.com/ktutak1337/Boilerplates/master/Server/Core/NFS/docker_nfs_mount.sh | sudo bash -s -- <NFS_SERVER_IP> <NFS_PATH> <MOUNT_POINT>
 ```
 
 Replace `<NFS_SERVER_IP>`, `<NFS_PATH>`, and `<MOUNT_POINT>` with the appropriate values.
@@ -40,7 +40,7 @@ Replace `<NFS_SERVER_IP>`, `<NFS_PATH>`, and `<MOUNT_POINT>` with the appropriat
 To download and run the script using wget, use the following command:
 
 ```bash
-curl -s https://raw.githubusercontent.com/ktutak1337/Boilerplates/master/Server/Core/docker_nfs_mount.sh | sudo bash -s -- <NFS_SERVER_IP> <NFS_PATH> <MOUNT_POINT>
+curl -s https://raw.githubusercontent.com/ktutak1337/Boilerplates/master/Server/Core/NFS/docker_nfs_mount.sh | sudo bash -s -- <NFS_SERVER_IP> <NFS_PATH> <MOUNT_POINT>
 ```
 
 Replace `<NFS_SERVER_IP>`, `<NFS_PATH>`, and `<MOUNT_POINT>` with the appropriate values.
